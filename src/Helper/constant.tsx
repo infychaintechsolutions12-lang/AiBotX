@@ -6,11 +6,11 @@
 
 
 export const USDT_ADDRESS = "0x55d398326f99059ff775485246999027b3197955";
-export const STAKING_ADDRESS = "0xdfe7afce40d7728cb91ce6b344fb441f2bdf4b86";
+export const STAKING_ADDRESS = "0x832223619833466efd365acfeb378f785969c0b1";
 // ==========================================
 // MLM STAKING ABI (AiBotXStaking)
 // ==========================================
-export const STAKING_ABI = [
+export const STAKING_ABI =  [
     {
       "inputs": [
         {
@@ -27,6 +27,11 @@ export const STAKING_ABI = [
           "internalType": "uint256",
           "name": "_adminFeeBps",
           "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_mainId",
+          "type": "address"
         }
       ],
       "stateMutability": "nonpayable",
@@ -1010,6 +1015,19 @@ export const STAKING_ABI = [
           "internalType": "uint256",
           "name": "",
           "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "mainId",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
         }
       ],
       "stateMutability": "view",
