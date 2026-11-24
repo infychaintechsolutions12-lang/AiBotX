@@ -1,7 +1,7 @@
 // config/index.ts
 import { cookieStorage, createStorage } from "wagmi";
 import { WagmiAdapter } from "@reown/appkit-adapter-wagmi";
-import { bsc, } from "@reown/appkit/networks"; // 👈 Import hardhat here
+import { bsc} from "@reown/appkit/networks"; // 👈 Import hardhat here
 
 export const projectId = import.meta.env.VITE_PROJECT_ID || "8f01d10d9bfdd018dca89381a668efc3";
 
